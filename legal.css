@@ -78,7 +78,8 @@ body {
 .legal-simple__content p {
   margin: 0 0 12px;
 }
-.legal-simple__content ul {
+.legal-simple__content ul,
+.legal-simple__content ol {
   margin: 8px 0 12px;
   padding-left: 1.2em;
 }

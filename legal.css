@@ -1,0 +1,113 @@
+:root {
+  --legal-text: #1f2937;
+  --legal-muted: #6b7280;
+  --legal-body: #374151;
+  --legal-link: #3b44f6;
+}
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  color: var(--legal-text);
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+}
+.legal-simple__topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: #111827;
+  color: #fff;
+}
+.legal-simple__topbar a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+.legal-simple__topbar a span {
+  background-image: linear-gradient(165deg, #ffc24d 0%, #ff8c00 48%, #ff4a00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.legal-simple__wrap {
+  width: 100%;
+  max-width: 47.06rem;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+  box-sizing: border-box;
+}
+.legal-simple__wrap h1 {
+  margin: 0 0 12px;
+  font-size: clamp(1.375rem, 0.5rem + 4vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.35;
+}
+.legal-simple__meta {
+  margin: 0 0 24px;
+  color: var(--legal-muted);
+  font-size: clamp(0.75rem, 0.5rem + 1.5vw, 0.875rem);
+  line-height: 1.7;
+}
+.legal-simple__content h2 {
+  margin: 28px 0 10px;
+  font-size: clamp(1.0625rem, 0.5rem + 2vw, 1.1875rem);
+  font-weight: 650;
+  line-height: 1.4;
+}
+.legal-simple__content h3 {
+  margin: 18px 0 8px;
+  font-size: clamp(0.9375rem, 0.5rem + 1.5vw, 1.0625rem);
+  font-weight: 600;
+}
+.legal-simple__content p,
+.legal-simple__content li {
+  color: var(--legal-body);
+  word-break: break-word;
+}
+.legal-simple__content p {
+  margin: 0 0 12px;
+}
+.legal-simple__content ul {
+  margin: 8px 0 12px;
+  padding-left: 1.2em;
+}
+.legal-simple__content li {
+  margin: 6px 0;
+}
+.legal-simple__content a {
+  color: var(--legal-link);
+  word-break: break-all;
+}
+.legal-simple__footer {
+  margin-top: 36px;
+  padding-top: 8px;
+  color: var(--legal-muted);
+  font-size: 12px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.85;
+  }
+  .legal-simple__topbar {
+    padding: 14px 24px;
+  }
+  .legal-simple__wrap {
+    padding: 40px 32px 72px;
+  }
+  .legal-simple__content h2 {
+    margin-top: 36px;
+  }
+}
